@@ -1,0 +1,37 @@
+// Global styles
+// These styles are available on all pages.
+// If a component has it's own styles, they can be found within the component's respective directory.
+
+@import "breakpoints";
+@import "css-variables";
+@import "base";
+@import "utilities";
+
+
+// .block-wrapper {
+// }
+
+body.debug .block-wrapper {
+  position: relative;
+  border: 2px dashed blue;
+}
+
+body.debug .block-wrapper.static-data {
+  display: block;
+}
+
+.block-wrapper.static-data {
+  display: none;
+}
+
+
+.atlas-shopify-product {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  border: 2px solid gray;
+  box-shadow: 8px 8px 0 0 gray;
+}
+.atlas-shopify-product__content {
+  padding: 8px;
+}
