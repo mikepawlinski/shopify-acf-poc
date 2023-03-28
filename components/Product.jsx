@@ -27,7 +27,7 @@ const Product = ({product}) => {
 
       <div>
         {product.shopify.variants.nodes.map(variant => (
-          <div className={styles.metadata}>
+          <div className={styles.metadata} key={variant.sku}>
             <div></div>
             <div data-tooltip-id="tooltip" data-tooltip-content="Shopify Storefront API">SKU: {variant.sku}</div>
             <div data-tooltip-id="tooltip" data-tooltip-content="Shopify Storefront API">Variant: {variant.title}</div>
